@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Attacker : MonoBehaviour
 {
-    [Range (0f, 5f)]
+    [Range(0f, 5f)]
     //Adds the walk speed varable and gives it a value
-    [SerializeField] float walkSpeed = 1f;
+    float currentSpeed = 1f;
+    //setting the speed
     
     void Start()
     {
@@ -16,7 +17,14 @@ public class Attacker : MonoBehaviour
     
     void Update()
     {//Equation for movment of sprite
-        transform.Translate(Vector2.left * walkSpeed *Time.deltaTime);
+        transform.Translate(Vector2.left * currentSpeed *Time.deltaTime);
         
     }
+    public void SetMovementSpeed (float speed)
+    {
+        currentSpeed = speed;
+
+    }
+
+
 }

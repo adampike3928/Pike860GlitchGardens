@@ -15,11 +15,21 @@ public class DefenderSpawner : MonoBehaviour
     {
         Vector2 clickPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         Vector2 worldPos = Camera.main.ScreenToWorldPoint(clickPos);
-        return worldPos;
+        Vector2 gridPos = SnapToGrid(worldPos);
+        return gridPos;
     }
-    private void SpawnDefender(Vector2 worldPos)
+
+    private Vector2 SnapToGrid(Vector2 rawworldPos)
     {
-        GameObject newDefender = Instantiate(defender ,worldPos, Quaternion.identity) as GameObject;
+        float newX = Mathf.RoundToInt(rawworldPos.x);
+        float newY = Mathf.RoundToInt(rawworldPos.y);
+        return new Vector2(newX, newY);
+
+    }
+    private void SpawnDefender(Vector2 roundedPos)
+    {
+        GameObject newDefender = Instantiate(defender ,roundedPos, Quaternion.identity) as GameObject;
+        Debug.Log(roundedPos);
     }
 
 

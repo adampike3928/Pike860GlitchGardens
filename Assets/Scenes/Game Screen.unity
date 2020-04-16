@@ -255,6 +255,7 @@ GameObject:
   - component: {fileID: 324236387}
   - component: {fileID: 324236388}
   - component: {fileID: 324236389}
+  - component: {fileID: 324236390}
   m_Layer: 0
   m_Name: trophy whole UI
   m_TagString: Untagged
@@ -364,6 +365,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 244aec46e398716488e981bdb0ff280f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &324236390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324236385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964c8334bdc66de4da2ec1e30a66a60d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startCost: 100
 --- !u!1 &695133546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1503,6 +1517,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: obj_trophy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188702375947709239, guid: 2cd6e5023f347524d9b5a90ae09c54e2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188702375947709239, guid: 2cd6e5023f347524d9b5a90ae09c54e2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188702376087078325, guid: 2cd6e5023f347524d9b5a90ae09c54e2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 4188702376087078325, guid: 2cd6e5023f347524d9b5a90ae09c54e2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cd6e5023f347524d9b5a90ae09c54e2, type: 3}
